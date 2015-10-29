@@ -12,6 +12,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.indcoders.mediaconverterelite.Fragments.ConverterFragment;
+import com.indcoders.mediaconverterelite.Fragments.HistoryFragment;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
         ,HistoryFragment.OnFragmentInteractionListener
@@ -90,8 +93,8 @@ public class MainActivity extends AppCompatActivity
         Fragment newFragment = null;
         android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
-// Replace whatever is in the fragment_container view with this fragment,
-// and add the transaction to the back stack if needed
+        // Replace whatever is in the fragment_container view with this fragment,
+        // and add the transaction to the back stack if needed
 
 
         if (id == R.id.nav_convert) {
