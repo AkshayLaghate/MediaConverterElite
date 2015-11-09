@@ -221,7 +221,7 @@ public class ConverterFragment extends Fragment {
                                               public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                                                   //Toast.makeText(getActivity(),"Format : "+ adapterView.getItemAtPosition(i),Toast.LENGTH_SHORT).show();
                                                   outPutFormat = (String) adapterView.getItemAtPosition(i);
-                                                  bConvert.animate().alpha(bConvert.getAlpha() > 0 ? 0 : 1).setInterpolator(new AccelerateDecelerateInterpolator()).start();
+                                                  //bConvert.animate().alpha(bConvert.getAlpha() > 0 ? 0 : 1).setInterpolator(new AccelerateDecelerateInterpolator()).start();
                                               }
 
                                               @Override
@@ -345,17 +345,20 @@ public class ConverterFragment extends Fragment {
                 @Override
                 public void onProgress(String message) {
                     //Toast.makeText(getActivity(),message,Toast.LENGTH_SHORT).show();
+                    Log.e("Progress", message);
                 }
 
                 @Override
                 public void onFailure(String message) {
                     //Toast.makeText(getActivity(),message,Toast.LENGTH_SHORT).show();
                     loader.stopFailure();
+                    Log.e("Failure", message);
                 }
 
                 @Override
                 public void onSuccess(String message) {
                     //Toast.makeText(getActivity(),message,Toast.LENGTH_SHORT).show();
+                    Log.e("Success", message);
                 }
 
                 @Override
