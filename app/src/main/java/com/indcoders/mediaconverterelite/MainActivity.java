@@ -17,9 +17,8 @@ import com.indcoders.mediaconverterelite.Fragments.HistoryFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
-        ,HistoryFragment.OnFragmentInteractionListener
-        ,ConverterFragment.OnFragmentInteractionListener
-        {
+        , HistoryFragment.OnFragmentInteractionListener
+        , ConverterFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

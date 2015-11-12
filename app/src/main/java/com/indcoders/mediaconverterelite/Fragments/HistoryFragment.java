@@ -18,7 +18,7 @@ import com.indcoders.mediaconverterelite.R;
  * to handle interaction events.
  * Use the {@link HistoryFragment#newInstance} factory method to
  * create an instance of this fragment.
- * */
+ */
 public class HistoryFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
