@@ -291,9 +291,6 @@ public class ConverterFragment extends Fragment {
     }
 
     public void pickFile() {
-        // This always works
-        //Intent i = new Intent(getActivity(), FilePickerActivity.class);
-        // This works if you defined the intent filter
         Intent i = new Intent(Intent.ACTION_GET_CONTENT);
         // i.setType("pdf/*");
 
