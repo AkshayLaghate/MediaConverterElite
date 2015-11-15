@@ -14,11 +14,13 @@ import android.view.MenuItem;
 
 import com.indcoders.mediaconverterelite.Fragments.ConverterFragment;
 import com.indcoders.mediaconverterelite.Fragments.HistoryFragment;
+import com.indcoders.mediaconverterelite.Fragments.OptionsFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
         , HistoryFragment.OnFragmentInteractionListener
-        , ConverterFragment.OnFragmentInteractionListener {
+        , ConverterFragment.OnFragmentInteractionListener
+        , OptionsFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +106,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
-
+            newFragment = OptionsFragment.newInstance(null, null);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
