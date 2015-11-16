@@ -103,8 +103,6 @@ public class MainActivity extends AppCompatActivity
             newFragment = ConverterFragment.newInstance(null, null);
         } else if (id == R.id.nav_history) {
             newFragment = HistoryFragment.newInstance(null, null);
-        } else if (id == R.id.nav_slideshow) {
-
         } else if (id == R.id.nav_manage) {
             newFragment = OptionsFragment.newInstance(null, null);
         } else if (id == R.id.nav_share) {

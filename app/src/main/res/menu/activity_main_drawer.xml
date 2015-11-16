@@ -11,10 +11,6 @@
             android:icon="@drawable/ic_history_black_48dp"
             android:title="History" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_repeat_black_48dp"
-            android:title="----" />
-        <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Options" />
