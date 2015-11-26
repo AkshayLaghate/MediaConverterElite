@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
@@ -361,7 +362,13 @@ public class ConverterFragment extends Fragment {
                 @Override
                 public void onFinish() {
                     loader.stopOk();
-                    bDone.setVisibility(View.VISIBLE);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            bDone.setVisibility(View.VISIBLE);
+                        }
+                    }, 2000);
+
                     //Toast.makeText(getActivity(),"completed",Toast.LENGTH_SHORT).show();
                 }
             });
